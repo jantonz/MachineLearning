@@ -18,11 +18,9 @@ for iter = 1:num_iters
     %
 
 
+err = X*theta - y;
 
-
-
-
-
+theta = theta - alpha*1/m * X'*err; %Careful with matrix sizes!
 
 
 
